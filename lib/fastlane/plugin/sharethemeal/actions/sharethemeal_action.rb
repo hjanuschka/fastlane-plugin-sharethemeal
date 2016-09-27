@@ -2,6 +2,11 @@ module Fastlane
   module Actions
     class SharethemealAction < Action
       def self.run(params)
+        if Helper.ci?
+          UI.important("Running on CI, skipping donation")
+          return
+        end
+
         stmurl = "https://sharethemeal.org/de/checkout.html?"
         stmurl << "userhash=#{params[:userhash]}&"
         stmurl << "lang=#{params[:language]}&"
@@ -14,15 +19,14 @@ module Fastlane
         stmurl << "thankYouUri=#{params[:thankYouUri]}"
         
         `open "#{stmurl}"`
-
       end
 
       def self.description
-        "ShareTheMeal"
+        "Donate ShareTheMeal"
       end
 
       def self.authors
-        ["Helmut Januschka"]
+        ["hjanuschka"]
       end
 
       
@@ -62,7 +66,7 @@ module Fastlane
       end
 
       def self.is_supported?(platform)
-        [:mac].include?(platform)
+        true
       end
     end
   end
