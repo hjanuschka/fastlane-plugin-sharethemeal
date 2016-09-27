@@ -20,9 +20,9 @@ sharethemeal(
   amount: "0.4",
   userhash: "xxxxx",
   language: "de",
-  beneficiaryUri: "xxxxx",
-  beneficiarySource: "contentful",
-  thankYouUri: "xxxxxx"
+  beneficiary_uri: "xxxxx",
+  beneficiary_source: "contentful",
+  thank_you_uri: "xxxxxx"
 )
 ```
 
