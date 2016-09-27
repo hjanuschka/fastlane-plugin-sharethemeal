@@ -14,9 +14,9 @@ module Fastlane
         stmurl << "symbol=€&"
         stmurl << "amount=0.4&"
         stmurl << "version=2&"
-        stmurl << "beneficiaryUri=#{params[:beneficiaryUri]}&"
+        stmurl << "beneficiaryUri=#{params[:beneficiary_uri]}&"
         stmurl << "beneficiarySource=contentful&"
-        stmurl << "thankYouUri=#{params[:thankYouUri]}"
+        stmurl << "thankYouUri=#{params[:thank_you_uri]}"
         
         `open "#{stmurl}"`
       end
@@ -47,17 +47,17 @@ module Fastlane
              description: "ShareTheMeal Language",
                 optional: false,
           type: String),
-          FastlaneCore::ConfigItem.new(key: :beneficiaryUri,
+          FastlaneCore::ConfigItem.new(key: :beneficiary_uri,
                 env_name: "SHARETHEMEAL_BENEFICIARYURI",
              description: "ShareTheMeal Beneficiary Uri",
                 optional: false,
           type: String),
-          FastlaneCore::ConfigItem.new(key: :beneficiarySource,
+          FastlaneCore::ConfigItem.new(key: :beneficiary_source,
                 env_name: "SHARETHEMEAL_BENEFICIARYSOURCE",
              description: "ShareTheMeal Beneficiary Source",
                 optional: false,
           type: String),
-          FastlaneCore::ConfigItem.new(key: :thankYouUri,
+          FastlaneCore::ConfigItem.new(key: :thank_you_uri,
                 env_name: "SHARETHEMEAL_THANKYOUURI",
              description: "ShareTheMeal Thank you URI",
                 optional: false,
