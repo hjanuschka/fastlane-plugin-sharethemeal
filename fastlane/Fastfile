@@ -1,0 +1,11 @@
+lane :test do
+  #https://sharethemeal.org/de/checkout.html?userhash=&amount=0.4&version=2&beneficiaryUri=&beneficiarySource=contentful&thankYouUri=aqbZxjtqM0KIKUcWO6Eik
+  sharethemeal(
+                  amount: "0.4",
+                  userhash: "xxxxx",
+                  language: "de",
+                  beneficiaryUri: "xxxxx",
+                  beneficiarySource: "contentful",
+                  thankYouUri: "xxxxxx"
+               )
+end
