@@ -16,7 +16,7 @@ to get the parameter values, please donate once per app - and extract the values
 ## Example
 
 ```ruby
-  sharethemeal(
+sharethemeal(
   amount: "0.4",
   userhash: "xxxxx",
   language: "de",
