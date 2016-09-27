@@ -2,34 +2,28 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-sharethemeal)
 
-
-
 ## About sharethemeal
 
-ShareTheMeal
+[fastlane](https://fastlane.tools) saves as hours of work, wich eventually saves us a lot of money.
+this is my try to remind myself to give, on every deploy using [fastlane](https://fastlane.tools).
 
-Fastlanes saves as hours of work, wich eventually saves us alot of money.
-this is my try to remind myself to give, on every deploy using fastlane.
-
-Opens a Browser with the Payment page of sharethemeal
+Opens a Browser with the Payment page of [ShareTheMeal](https://sharethemeal.org/)
 
 to get the parameter values, please donate once per app - and extract the values from the URL.
 
-> As it is not API driven, it does not work on CI
-
-
+> As this only opens the pre-filled donate page in your browser, this doesn't work on a CI
 
 ## Example
 
 ```ruby
-            sharethemeal(
-                amount: "0.4",
-                userhash: "xxxxx",
-                language: "de",
-                beneficiaryUri: "xxxxx",
-                beneficiarySource: "contentful",
-                thankYouUri: "xxxxxx"
-             )
+sharethemeal(
+  amount: "0.4",
+  userhash: "xxxxx",
+  language: "de",
+  beneficiaryUri: "xxxxx",
+  beneficiarySource: "contentful",
+  thankYouUri: "xxxxxx"
+)
 ```
 
 ## Getting Started
