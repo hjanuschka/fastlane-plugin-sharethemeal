@@ -7,7 +7,7 @@
 [fastlane](https://fastlane.tools) saves as hours of work, wich eventually saves us a lot of money.
 this is my try to remind myself to give, on every deploy using [fastlane](https://fastlane.tools).
 
-Opens a Browser with the Payment page of [ShareTheMeal](https://sharethemeal.org/)
+Opens a Browser with the Donation page of [ShareTheMeal](https://sharethemeal.org/)
 
 to get the parameter values, please donate once per app - and extract the values from the URL.
 
