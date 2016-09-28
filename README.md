@@ -14,7 +14,11 @@ to get the parameter values, please donate once per app - and extract the values
 > As this only opens the pre-filled donate page in your browser, this doesn't work on a CI
 
 
-**Help trying to Automate donation -> see issue https://github.com/hjanuschka/fastlane-plugin-sharethemeal/issues/5 for current progress**
+**Help trying to Automate donation -> see issue [#5](https://github.com/hjanuschka/fastlane-plugin-sharethemeal/issues/5) for current progress**
+
+Download the Apps:
+  * IOS: [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent)
+  * ANDROID: [PlayStore] (https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)
 
 
 ## Example
