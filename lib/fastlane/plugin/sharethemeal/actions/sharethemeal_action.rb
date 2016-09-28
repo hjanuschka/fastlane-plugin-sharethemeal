@@ -54,7 +54,7 @@ module Fastlane
         end
 
       rescue => err
-        UI.error "Donation failed, be sure that you have done atleast one manual donation with a stored payment option"
+        UI.error "Donation failed, be sure that you have done atleast one manual donation with a stored payment option: #{err}"
       end
       end
 
