@@ -8,10 +8,10 @@
 This is my way of reminding myself to give, on every deploy using [fastlane](https://fastlane.tools).
 
 Opens a Browser with the Donation page of [ShareTheMeal](https://sharethemeal.org/)
+to get the URL, please donate once per app - and copy the URL.
 
-to get the parameter values, please donate once per app - and extract the values from the URL.
+![Screenshot](screen.png)
 
-> As this only opens the pre-filled donate page in your browser, this doesn't work on a CI
 
 
 **Help trying to Automate donation -> see issue [#5](https://github.com/hjanuschka/fastlane-plugin-sharethemeal/issues/5) for current progress**
@@ -26,11 +26,7 @@ Download the Apps:
 ```ruby
 sharethemeal(
   amount: "0.4",
-  userhash: "xxxxx",
-  language: "de",
-  beneficiary_uri: "xxxxx",
-  beneficiary_source: "contentful",
-  thank_you_uri: "xxxxxx"
+  url: "https://sharethemeal.org/de/checkout.html?userhash=xxxxxx&lang=de&currency=EUR&symbol=€&amount=0.4&version=2&beneficiaryUri=xxx&beneficiarySource=contentful&thankYouUri=xxx"
 )
 ```
 
