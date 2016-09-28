@@ -4,8 +4,8 @@
 
 ## About sharethemeal
 
-[fastlane](https://fastlane.tools) saves as hours of work, wich eventually saves us a lot of money.
-this is my try to remind myself to give, on every deploy using [fastlane](https://fastlane.tools).
+[fastlane](https://fastlane.tools) saves us hours of work, which eventually saves us a lot of money.
+This is my way of reminding myself to give, on every deploy using [fastlane](https://fastlane.tools).
 
 Opens a Browser with the Donation page of [ShareTheMeal](https://sharethemeal.org/)
 
