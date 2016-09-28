@@ -14,7 +14,7 @@ to get the parameter values, please donate once per app - and extract the values
 > As this only opens the pre-filled donate page in your browser, this doesn't work on a CI
 
 
-** Help trying to Automate donation -> see issue #5 for current progress **
+**Help trying to Automate donation -> see issue #5 for current progress**
 
 
 ## Example
