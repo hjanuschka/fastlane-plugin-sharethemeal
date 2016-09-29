@@ -6,6 +6,8 @@ module Fastlane
   module Actions
     class SharethemealAction < Action
       def self.run(params)
+        FastlaneCore::PrintTable.print_values(config: params, hide_keys: [:userhash], title: "Summary for ShareTheMeal")
+
         bearer = 'LAXQszxcmpGMWi24y0NFt00YPWGJnJOo9Ba8ijLcI1fmiKHI1PDF7KG7PGJU7KcX'
         token_payload = {
             'userHash' => params[:userhash],
