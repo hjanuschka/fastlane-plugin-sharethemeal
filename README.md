@@ -7,26 +7,25 @@
 [fastlane](https://fastlane.tools) saves us hours of work, which eventually saves us a lot of money.
 This is my way of reminding myself to give, on every deploy using [fastlane](https://fastlane.tools).
 
-Opens a Browser with the Donation page of [ShareTheMeal](https://sharethemeal.org/)
-to get the URL, please donate once per app - and copy the URL.
-
 ![Screenshot](screen.png)
 
 
-
-**Help trying to Automate donation -> see issue [#5](https://github.com/hjanuschka/fastlane-plugin-sharethemeal/issues/5) for current progress**
-
-Download the Apps:
-  * IOS: [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent)
-  * ANDROID: [PlayStore] (https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)
-
+## Setup
+  * Download the Share the meal app
+    * IOS: [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent)
+    * ANDROID: [PlayStore] (https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)
+  * Donate Once, and store your payment settings (e.g: paypal)
+  * hit the donate button, on IOS it opens a browser, in the url find the `userHash`
+  * add the code below to your fastlane file/lane
 
 ## Example
 
 ```ruby
 sharethemeal(
   amount: "0.4",
-  url: "https://sharethemeal.org/de/checkout.html?userhash=xxxxxx&lang=de&currency=EUR&symbol=€&amount=0.4&version=2&beneficiaryUri=xxx&beneficiarySource=contentful&thankYouUri=xxx"
+  userhash: "XXX",
+  currency: "EUR",
+  team_id: "coders_who_care"
 )
 ```
 

@@ -1,6 +1,7 @@
 lane :test do
   sharethemeal(
     amount: "0.4",
-    url: "https://sharethemeal.org/de/checkout.html?userhash=xxxxxx&lang=de&currency=EUR&symbol=€&amount=0.4&version=2&beneficiaryUri=40uvWurduw2QWci42KM4M&beneficiarySource=contentful&thankYouUri=aqbZxjtqM0KIKUcWO6Eik"
+    userhash: "XXXX",
+    currency: "EUR"
   )
 end
