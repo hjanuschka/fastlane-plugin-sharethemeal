@@ -6,7 +6,7 @@ require 'fastlane/plugin/sharethemeal/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-sharethemeal'
   spec.version       = Fastlane::Sharethemeal::VERSION
-  s.version = "#{s.version}-alpha-#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
+  spec.version = "#{s.version}-alpha-#{ENV['TRAVIS_BUILD_NUMBER']}" if ENV['TRAVIS']
   spec.author        = %q{Helmut Januschka}
   spec.email         = %q{helmut@januschka.com}
 
