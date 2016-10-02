@@ -1,7 +1,7 @@
 lane :test do
   sharethemeal(
     amount: "0.4",
-    userhash: "XXXX",
+    userhash: "xxxx",
     currency: "EUR"
   )
 end
