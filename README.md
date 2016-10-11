@@ -31,8 +31,8 @@ Download The App to your Mobile.
 
 | Platform | Link |
 |----------|:-------------:|
-| IOS |  [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent) |
-| ANDROID |    [PlayStore](https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)    |
+| iOS |  [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent) |
+| Android |    [PlayStore](https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)    |
 
 **Donate Once**, in the Safari instance that opens - you'll find your `userHash` - this is required to automate the donation.
 
@@ -49,18 +49,10 @@ lane :donate do
 end
 ```
 
-
-## Issues and Feedback
-
-For any other issues and feedback about this plugin, please submit it to this repository.
-
 ## Troubleshooting
 
 If you have trouble using plugins, check out the [Plugins Troubleshooting](https://github.com/fastlane/fastlane/blob/master/fastlane/docs/PluginsTroubleshooting.md) doc in the main `fastlane` repo.
 
-## Using `fastlane` Plugins
-
-For more information about how the `fastlane` plugin system works, check out the [Plugins documentation](https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Plugins.md).
 
 ## About `fastlane`
 
