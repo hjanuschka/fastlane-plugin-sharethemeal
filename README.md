@@ -3,7 +3,7 @@
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-sharethemeal)
 
 <img src='https://sharethemeal.org/assets/img/apps-de@2x-c5fe00ca10.png' height=250>
-![Screenshot](screen.png)
+![Screenshot](assets/screen.png)
 
 ## About
 > This Plugin Enables unattended automated Donations of any size to the ShareTheMeal Inititative from the World-Food-Program
@@ -25,7 +25,6 @@ fastlane add_plugin sharethemeal
 
 ### Get your UserHash
 In Order to automate donation you require to store your payment method (preffered PayPal)
-So do a single donation, on iOS this opens a Safari instance, look at the url and extract your `userHash`
 
 Download The App to your Mobile.
 
@@ -34,7 +33,15 @@ Download The App to your Mobile.
 | iOS |  [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent) |
 | Android |    [PlayStore](https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)    |
 
-**Donate Once**, in the Safari instance that opens - you'll find your `userHash` - this is required to automate the donation.
+
+  * Launch the App 
+  * do a single donation
+  * Login and go to your profile
+  * go to settings screen
+  * tap a few times (~10) on the Version label (e.g: 3.0.2(184) Production)
+  
+For a detailed step by step guide on how to obtain your user hash  you can see [Step by Step Guide](STEP_BY_STEP.md)
+
 
 ## Example
 
