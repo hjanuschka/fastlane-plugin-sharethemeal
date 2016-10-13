@@ -10,11 +10,25 @@ module Fastlane
         FastlaneCore::PrintTable.print_values(config: params, hide_keys: [:userhash], title: "Summary for ShareTheMeal")
         api = StmApi::Donation.new(params)
         result = api.donate(amount: params[:amount])
+        
         if result == true
           UI.success "Successfully Donated #{params[:amount]} #{params[:currency]} to ShareTheMeal 🍔 "
+          
+          rows = [];
+          team = api.find_one_team("fastlane")
+          rows << [team["teamId"], team["numberOfMembers"], team["numberOfMeals"], team["teamPower"]]
+          puts ""
+          puts Terminal::Table.new(
+            title: "Team Status".green,
+            headings: ["Name", "Members 👨👨👧", "Meals 🍕", "Power ⚡️"],
+            rows: rows
+        )
+        puts ""
+
         else
           UI.important 'Donation was not successfully accepted, maybe card is invalid or something else'
         end
+        
       rescue => err
         puts err.backtrace
         UI.error "Donation failed, be sure that you have done atleast one manual donation with a stored payment option: #{err.backtrace}"
