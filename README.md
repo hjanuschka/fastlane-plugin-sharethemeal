@@ -25,20 +25,18 @@ fastlane add_plugin sharethemeal
 
 ### Get your UserHash
 In Order to automate donation you require to store your payment method (preffered PayPal)
+Download The App to your Mobile, and configure it.
 
-Download The App to your Mobile.
+|  | Step |
+|----------|:-------------|
+| 💾 | Download  [Appstore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent),[PlayStore](https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)    |
+| 🚀 | Launch the App  |
+| 🍕 | Do a Single Donation  |
+| 📱 | Login and go to your profile |
+| 🛠 | go to settings |
+| 👊 | tap a few times (~10) on the Version label (e.g: **3.0.2(184) Production**) |
 
-| Platform | Link |
-|----------|:-------------:|
-| iOS |  [AppStore](https://click.google-analytics.com/redirect?tid=UA-58737077-1&url=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fsharethemeal%2Fid977130010&aid=org.sharethemeal.app&idfa=%{idfa}&cs=stmwebsite&cm=website&cn=permanent) |
-| Android |    [PlayStore](https://play.google.com/store/apps/details?id=org.sharethemeal.app&referrer=utm_source%3Dstmwebsite%26utm_medium%3Dwebsite%26utm_campaign%3Dpermanent)    |
 
-
-  * Launch the App 
-  * do a single donation
-  * Login and go to your profile
-  * go to settings screen
-  * tap a few times (~10) on the Version label (e.g: 3.0.2(184) Production)
   
 For a detailed step by step guide on how to obtain your user hash  you can see [Step by Step Guide](STEP_BY_STEP.md)
 
