@@ -3,7 +3,7 @@
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-sharethemeal)
 
 <img src='https://sharethemeal.org/assets/img/apps-de@2x-c5fe00ca10.png' height=250>
-![Screenshot](assets/screen.png)
+![Screenshot](assets/screen1.png)
 
 ## About
 > This Plugin Enables unattended automated Donations of any size to the ShareTheMeal Inititative from the World-Food-Program
