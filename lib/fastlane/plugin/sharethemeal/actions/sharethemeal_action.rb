@@ -9,6 +9,7 @@ module Fastlane
       def self.run(params)
         FastlaneCore::PrintTable.print_values(config: params, hide_keys: [:userhash], title: "Summary for ShareTheMeal")
         api = StmApi::Donation.new(params)
+        UI.user_error!("Please use a . to provide decimales (e.g. 0.5 for 50 cents)") if params[:amount].include?(",")
         result = api.donate(amount: params[:amount])
 
         if result == true
@@ -35,7 +36,7 @@ module Fastlane
       end
 
       def self.description
-        'Donate ShareTheMeal'
+        'Donate food via ShareTheMeal'
       end
 
       def self.authors
