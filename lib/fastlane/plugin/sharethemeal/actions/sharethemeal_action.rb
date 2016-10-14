@@ -13,7 +13,7 @@ module Fastlane
         result = api.donate(amount: params[:amount])
 
         if result == true
-          UI.success "Successfully Donated #{params[:amount]} #{params[:currency]} to ShareTheMeal 🍔 "
+          UI.success "Successfully donated #{params[:amount]} #{params[:currency]} to ShareTheMeal 🍔 "
 
           rows = []
           team = api.find_one_team("fastlane")
@@ -27,7 +27,7 @@ module Fastlane
           puts ""
 
         else
-          UI.important 'Donation was not successfully accepted, maybe card is invalid or something else'
+          UI.important 'Donation was not successfully accepted, maybe your card was declined? Try donating manually'
         end
 
       rescue => err
