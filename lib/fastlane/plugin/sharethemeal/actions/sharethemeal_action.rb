@@ -29,7 +29,6 @@ module Fastlane
         else
           UI.important 'Donation was not successfully accepted, maybe your card was declined? Try donating manually'
         end
-
       rescue => err
         puts err.backtrace
         UI.error "Donation failed, be sure that you have done atleast one manual donation with a stored payment option: #{err.backtrace}"
@@ -66,6 +65,11 @@ module Fastlane
                                          description: 'ShareTheMeal Team ID',
                                          default_value: 'fastlane',
                                          optional: false,
+                                         type: String),
+          FastlaneCore::ConfigItem.new(key: :campaign_id,
+                                         env_name: 'SHARETHEMEAL_CAMPAIGN_ID',
+                                         description: 'ShareTheMeal Campaign ID',
+                                         optional: true,
                                          type: String)
 
         ]
